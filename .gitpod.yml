@@ -6,8 +6,6 @@
 
 tasks:
   - init: npm install
-    command: |
-      export HMR_HOST=`gp url 5173` 
-      npm run dev
+    command: npm run dev
 
 
