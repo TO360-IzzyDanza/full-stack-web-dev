@@ -1,4 +1,5 @@
 <script>
+    import "../app.css";
     import TodoItem from "$lib/todo-item.svelte";
 
     const title = "Todo";
@@ -8,13 +9,27 @@
     <title>{title}</title>
 </svelte:head>
 
-<h1>{title}</h1>
+<div class="todos">
+    <h1>{title}</h1>
 
-<form action="" method="">
-    <input type="text" name="text" aria-label="Add a todo" placeholder="+ type to add a todo" />
+    <form action="" method="">
+        <input
+            type="text"
+            name="text"
+            aria-label="Add a todo"
+            placeholder="+ type to add a todo"
+        />
+    </form>
 
-</form>
+    <TodoItem />
+    <TodoItem />
+    <TodoItem />
+</div>
 
-<TodoItem/>
-<TodoItem/>
-<TodoItem/>
+<style>
+    .todos {
+        width: 100%;
+        max-width: 42rem;
+        margin: 4rem auto 0 auto;
+    }
+</style>
