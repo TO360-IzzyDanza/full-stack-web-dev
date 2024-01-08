@@ -1,5 +1,5 @@
 <script>
-    import "../app.css";
+    import "../../app.css";
     import TodoItem from "$lib/todo-item.svelte";
 
     const title = "Todo";
@@ -12,7 +12,7 @@
 <div class="todos">
     <h1>{title}</h1>
 
-    <form action="" method="" class="newTodo">
+    <form method="POST" class="newTodo">
         <input
             type="text"
             name="text"
