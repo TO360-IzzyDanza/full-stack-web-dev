@@ -12,7 +12,7 @@
 <div class="todos">
     <h1>{title}</h1>
 
-    <form action="" method="" class="newTodo">
+    <form method="POST" class="newTodo">
         <input
             type="text"
             name="text"
