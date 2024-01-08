@@ -1,5 +1,5 @@
 <script>
-    import "../../app.css";
+    import "../app.css";
     import TodoItem from "$lib/todo-item.svelte";
 
     const title = "Todo";
